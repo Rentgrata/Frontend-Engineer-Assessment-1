@@ -1,4 +1,4 @@
-# Frontend-Engineer-Assessment-1
+# Filtering 
 
 
 1. Problem statement:
@@ -9,14 +9,14 @@ You are asked to build a class in TypeScript that filters a list of users receiv
 
 The data received from the backend API will consist of an array of user objects, each with the following properties:
 
-'''
+```
 interface User {
   id: number;
   name: string;
   dateOfBirth: string;
   email: string;
 }
-'''
+```
 
 3. Requirements:
 
@@ -28,7 +28,7 @@ Examples:
 
 - An example of using the class to filter a list of users:
 
-'''
+```
 const users: User[] = [
   { id: 1, name: "John Doe", dateOfBirth: "01/01/1990", email: "johndoe@example.com" },
   { id: 2, name: "Jane Doe", dateOfBirth: "02/01/1991", email: "janedoe@example.com" },
@@ -40,11 +40,11 @@ const filteredUsers = filter.filterBy({ name: "John Doe" });
 
 console.log(filteredUsers);
 // Output: [{ id: 1, name: "John Doe", dateOfBirth: "01/01/1990", email: "johndoe@example.com" }]
-'''
+```
 
 - An example of updating the filter criteria dynamically:
 
-'''
+```
 const filter = new UserFilter(users);
 
 let filteredUsers = filter.filterBy({ name: "John Doe" });
@@ -55,4 +55,4 @@ filter.updateFilterCriteria({ name: "Jane Doe" });
 filteredUsers = filter.getFilteredUsers();
 console.log(filteredUsers);
 // Output: [{ id: 2, name: "Jane Doe", dateOfBirth: "02/01/1991", email: "janedoe@example.com" }]
-'''
+```
