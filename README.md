@@ -5,6 +5,7 @@
 
 You are asked to build a class in TypeScript that filters a list of users received from a backend API. The filter should allow users to search for specific users based on specified criteria such as name, date of birth, and email. The solution should be optimized for performance and user experience.
 
+
 2. Data:
 
 The data received from the backend API will consist of an array of user objects, each with the following properties:
@@ -18,15 +19,17 @@ interface User {
 }
 ```
 
+
 3. Requirements:
 
 Build a class that filters a list of users based on specified criteria (name, date of birth, email).
 The filtering mechanism should be dynamic and update the displayed list in real-time as the user changes the filter criteria.
 The solution should be optimized for performance and user experience.
 
+
 Examples:
 
-- An example of using the class to filter a list of users:
+An example of using the class to filter a list of users:
 
 ```
 const users: User[] = [
@@ -42,7 +45,7 @@ console.log(filteredUsers);
 // Output: [{ id: 1, name: "John Doe", dateOfBirth: "01/01/1990", email: "johndoe@example.com" }]
 ```
 
-- An example of updating the filter criteria dynamically:
+An example of updating the filter criteria dynamically:
 
 ```
 const filter = new UserFilter(users);
